@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+
+/* Global Styles */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  overflow: hidden;
+}
+
+.input {
+  background-color: rgb(171, 248, 168);
+}
+
+.container {
+  background: rgba(255, 255, 255, .2);
+  border-radius: 10px;
+  z-index: 99;
+  width: 25vw; 
+}
+
+.circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  
+  background: red;
+  position: absolute;
+  z-index: 0;
+}
+
+.c-1 {
+  top: 2rem;
+  left: 25rem;
+  z-index: 2;
+}
+
+.c-2 {
+  top: 28rem;
+  left: 45rem;
+}
+
+.button {
+  width: 66px;
+  padding: 20px;
+  margin: 0 3px;
+  border: 2px solid black;
+  border-radius: 9px;
+  cursor: pointer;
+  background-color: rgb(42, 42, 42);
+  color: white;
+  transition: all .5s;
+}
+
+.button:hover {
+  background: rgb(114, 114, 114);
+  color: white;
+}
+
+.row {
+  margin: 8px 0;
+}
+
+.row input {
+  width: 291px;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 0px;
+  padding: .7rem;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 40vw; 
+  }
+
+  .circle {
+    height: 150px;
+    width: 150px;
+  }
+
+  .c-1 {
+    top: 1rem;
+    left: 15rem;
+  }
+
+  .c-2 {
+    top: 20rem;
+    left: 30rem;
+  }
+
+  .button {
+    width: 50px;
+    padding: 15px;
+  }
+
+  .row input {
+    width: 200px;
+    font-size: 18px;
+  }
+}
+
+/* Smartphone Styles (480px to 767px) */
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 60vw; 
+  }
+
+  .circle {
+    height: 100px;
+    width: 100px;
+  }
+
+  .c-1 {
+    top: 0.5rem;
+    left: 5rem;
+  }
+
+  .c-2 {
+    top: 15rem;
+    left: 15rem;
+  }
+
+  .button {
+    width: 40px;
+    padding: 10px;
+  }
+
+  .row input {
+    width: 150px;
+    font-size: 16px;
+  }
+}
+
+
+
+@media (max-width: 479px) {
+  .container {
+    width: 80vw; 
+  }
+
+  .circle {
+    height: 50px;
+    width: 50px;
+  }
+
+  .c-1 {
+    top: 0.2rem;
+    left: 2rem;
+  }
+
+  .c-2 {
+    top: 10rem;
+    left: 5rem;
+  }
+
+  .button {
+    width: 30px;
+    padding: 5px;
+  }
+
+  .row input {
+    width: 100px;
+    font-size: 14px;
+  }
+}
